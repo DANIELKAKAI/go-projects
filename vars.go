@@ -8,9 +8,10 @@ func main() {
    a = 44;
    b = 55;
    sum = add(a,b);
-   d := subtract(a,b); /* static type declaration */
+   s := subtract(a,b); /* static type declaration */
+   d := divide(a,b)
 
-   fmt.Println(sum,d)
+   fmt.Println(sum,s,d)
 }
 
 func add(x,y int) int{
@@ -19,4 +20,8 @@ func add(x,y int) int{
 
 func subtract(x,y int) int{
 	return x-y;
+}
+
+func divide(x,y int) float64{
+	return float64(x)/float64(y)
 }
